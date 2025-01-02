@@ -1,0 +1,76 @@
+Host TOP207
+  HostName 10.40.40.207
+  User tiptop
+  IdentityFile ~/.ssh/tiptop
+  RemoteCommand source ~/.bashrc; exec $SHELL -l
+
+Host 172.16.6.33
+  HostName 172.16.6.33
+  User tiptop
+  IdentityFile ~/.ssh/tiptop
+  RemoteForward 127.0.0.1:6401 10.40.83.79:6400
+  RemoteCommand source ~/.bashrc; exec $SHELL -l
+  
+Host TOP189
+  HostName 10.40.41.189
+  User tiptop
+  IdentityFile ~/.ssh/tiptop
+  RemoteForward 127.0.0.1:6400 10.40.83.79:6400
+  RemoteCommand source ~/.bashrc; exec $SHELL -l
+
+Host TOP189-samuel
+  HostName 10.40.41.189
+  User samuel-chuang
+  IdentityFile ~/.ssh/tiptop
+  RemoteForward 127.0.0.1:6400 10.40.83.79:6400
+  RemoteCommand source ~/.bashrc; exec $SHELL -l
+
+Host TOP147
+  HostName 10.40.41.147
+  User tiptoper
+  IdentityFile ~/.ssh/tiptop
+  RemoteForward 127.0.0.1:6400 10.40.83.79:6400
+  RemoteCommand source ~/.bashrc; exec $SHELL -l
+
+Host TOP226
+    HostName 10.40.40.226
+    User tiptop
+    IdentityFile ~/.ssh/tiptop
+    RemoteForward 127.0.0.1:6400 10.40.83.79:6400
+    RemoteCommand source ~/.bashrc; exec $SHELL -l
+Host TOP227
+    HostName 10.40.40.227
+    User root
+    IdentityFile ~/.ssh/tiptop
+    RemoteForward 127.0.0.1:6400 10.40.83.79:6400
+    RemoteCommand source ~/.bashrc; exec $SHELL -l
+
+HOST MOG-Oracle
+    HostName 172.16.2.11
+    User root
+    IdentityFile ~/.ssh/tiptop
+    RemoteForward 127.0.0.1:6400 10.40.83.79:6400
+    RemoteCommand source ~/.bashrc; exec $SHELL -
+HOST TOP185
+    HostName 10.40.41.185
+    User root
+    IdentityFile ~/.ssh/tiptop
+    RemoteForward 127.0.0.1:6400 10.40.83.79:6400
+    RemoteCommand source ~/.bashrc; exec $SHELL -
+HOST TOP189
+    HostName 10.40.41.189
+    User tiptop
+    IdentityFile ~/.ssh/tiptop
+    RemoteForward 127.0.0.1:6400 10.40.83.79:6400
+    RemoteCommand source ~/.bashrc; exec $SHELL -
+
+HOST MogDB
+    HostName 172.16.6.31
+    User root
+    IdentityFile ~/.ssh/tiptop
+    RemoteCommand source ~/.bashrc; exec $SHELL -
+HOST 18-samuel
+    HostName 10.40.40.18
+    User samuel-chuang
+    IdentityFile ~/.ssh/samuel-chuang
+    RemoteCommand source ~/.bashrc; exec $SHELL -
