@@ -1,11 +1,12 @@
  # GGC5 testing fglrun 3.20
  ### Genero bdl testing
- - record 207_demo.guilog
+ - record menu_147.log
+ - fglrun --start-guilog=azzi000.guilog $AZZ/42r/azzp000.42r azzi800
  - export GGCDIR=/u1/genero/ggc
  - . $GGCDIR/envggc
- - ggcgen bdl 207_demo.guilog
- - r.cs 207_demo.4gl
- - fglrun 207_demo tcp --command "fglrun /u1/genero/fgl/demo/demo"
+ - ggcgen bdl menu_147.log
+ - r.cs menu_147.4gl
+ - fglrun 207_demo tcp --command "fglrun /u1/topprd/erp/azz/42r/azzi000.42r"
  ### Genero java testing
  - ggcgen java --package-name demo --check-form demo.guilog
  - cd demo 
